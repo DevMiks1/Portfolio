@@ -18,3 +18,4 @@ ScrollReveal().reveal('.scroll-btn1', { delay: 550, origin: "bottom"});
 // services section
 ScrollReveal().reveal('.title-services', { delay: 550, origin: "bottom"});
 ScrollReveal().reveal('.card', { delay: 600, origin: "bottom"});
+
