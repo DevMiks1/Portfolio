@@ -8,8 +8,14 @@
 }
 .about-me{
     position: relative;
-    top: 67px;
+    top: 48px;
     height: calc(100vh);
+    
+}
+.about-me h2{
+    padding-bottom: 3rem;
+    font-weight: 900;
+    font-size: 3rem;
 }
 #skills-section{
     padding: 3rem 0 5rem 0;
@@ -45,10 +51,14 @@
 .skills-effect:hover::before{
     left: 100%;
 }
-/* reveal description */
-.back-end{
-    overflow: hidden;
+.front-end-card, .back-end-card, .tools-card{
+    height: 7rem;
+    width: 7rem;
 }
+/* reveal description */
+/* .back-end{
+    overflow: hidden;
+} */
 .back-end:hover .back-end-body , .front-end:hover .front-end-body, .tools:hover .tools-body{
     right: 0;
 }
@@ -66,8 +76,14 @@
     padding: .2rem 5rem;
     transition: 2s ease-in-out;
     line-height: 1.4rem;
+    
 }
 
+.back-end-body, .front-end-body, .tools-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .back-end-title h2 , .front-end-title h2, .tools-title h2{
     padding: 0;
     font-weight: 600;
@@ -92,7 +108,9 @@
     padding-bottom: 1rem;
     font-weight: 900;
     font-size: 3rem;
-    
+}
+.emoji{
+    padding-bottom: 1.5rem;
 }
 .image-content,
 .card-content1,.card-content2,.card-content3{
@@ -200,7 +218,8 @@
     text-align: center;
 }
 .testimonial-title h2 {
-    padding: 0;
+    padding-top: 1.3rem;
+    padding-bottom: .8rem;
     font-weight: 600;
     font-size: 2.5rem;
 }
@@ -209,23 +228,254 @@
     font-size: 1rem ;
     font-weight: 300;
 }
-.fa-close{
+/* .fa-close{
     position: relative;
     left: 8rem;
-    top: .8rem;
+    top: .1rem;
     margin-top: .3rem;
     font-size: 2rem;
     cursor: pointer;   
+    margin: auto;
+} */
+
+.close-icon{
+    margin-top: .3rem;
+    font-size: 2rem;  
+    display: flex;
+    justify-content: end;
+}
+.close-icon i{
+    cursor: pointer;
 }
 .fa-face-smile{
     font-size: 2rem;
     color: var(--clr-yellowish);
 }
-@media (max-width: 768px) and (min-width: 500px) {
+@media (max-width: 1300px) and (min-width: 1136px){
+    .tools-body{
+        padding: .2rem 1rem;
+    }
+}   
+@media (max-width: 1135px) and (min-width: 985px){
+    .tools-body{
+        padding: 5rem .8rem;
+    }
+    .tools-subtitle p{  
+        font-size: 1rem;
+    }
+    .tools-title h2{
+        font-size: 2rem;
+       
+    }
+}
+@media (max-width: 984px) and (min-width: 750px){
+    .back-end-body{
+        padding: 3rem .8rem;
+    }
+    .back-end-body p{  
+        font-size: 1rem;
+    }
+    .back-end-title h2{
+        font-size: 2rem;
+    }
+    .tools-body{
+        padding: 5rem .8rem;
+    }
+    .tools-subtitle p{  
+        font-size: 1rem;
+    }
+    .tools-title h2{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 794px) and (min-width: 610px){
+    .back-end-body{
+        padding: 2rem .8rem;
+    }
+    .back-end-subtitle p{  
+        line-height: 1.1;
+        font-size: 1rem;
+    }
+    .back-end-title h2{
+        font-size: 1rem;
+    }
+
+    .tools-body{
+        padding: 4rem .8rem;
+    }
+    .tools-subtitle p{  
+        line-height: 1.1;
+        font-size: .9rem;
+    }
+    .tools-title h2{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 609px) and (min-width: 450px){
+    .front-end-body{
+        padding: 2rem .8rem;
+    }
+    .front-end-subtitle p{  
+        line-height: 1.1;
+        font-size: 1rem;
+    }
+    .front-end-title h2{
+        font-size: 2rem;
+    }
     
+    .back-end-body{
+        padding: 2rem .8rem;
+    }
+    .back-end-subtitle p{  
+        line-height: 1.1;
+        font-size: 1rem;
+    }
+    .back-end-title h2{
+        font-size: 1rem;
+    }
+    .tools-body{
+        padding: 6rem .8rem;
+    }
+    .tools-subtitle p{  
+        line-height: 1.2;
+        font-size: .9rem;
+    }
+    .tools-title h2{
+        font-size: 1rem;
+    }
+}
+/* @media (max-width: 576px) and (min-width: 300px){
+    .back-end-body{
+        padding: 2rem .8rem;
+    }
+    .back-end-subtitle p{  
+        line-height: 1.1;
+        font-size: 1rem;
+    }
+    .back-end-title h2{
+        font-size: 1rem;
+    }
+
+    .tools-body{
+        padding: 4rem .8rem;
+    }
+    .tools-subtitle p{  
+        line-height: 1.1;
+        font-size: .8rem;
+    }
+    .tools-title h2{
+        font-size: 1rem;
+    }
+    .back-end{
+        padding: 10rem 0;
+    }
+} */
+/* laptop */
+@media (max-width: 1004px) and (min-width: 851px) {
+    .card-name {
+        font-size: 1.5rem;
+    }
+    .card-profession{
+        font-size: .9rem;
+    }
+    .testimonial-title h2 {
+        padding-top: .8rem;
+        padding-bottom: .8rem;
+        font-weight: 600;
+        font-size: 2rem;
+    }
+}
+@media (max-width: 850px) and (min-width: 768px) {
+    .testimonial-subtitle1{
+        font-size: .9rem ;    
+    }
+    .testimonial-title h2{
+        font-size: 1.5rem;
+    }
+    .emoji{
+        padding-bottom: .9rem;
+    }
+    .emoji i{
+        font-size: 1.5rem;
+    }
+    .testimonial-subtitle2{
+        font-size: .8rem ;    
+    }
+    .testimonial-subtitle3{
+        font-size: .8rem ;    
+    }
+    .card-name {
+        font-size: 1.2rem;
+    }
+    .card-profession{
+        font-size: .9rem;
+    }
+    .card-image{
+        height: 130px;
+        width: 130px;
+    }
+    
+}
+
+/* tablet */
+@media (max-width: 767px) and (min-width: 501px) {
     .about-me{
         height: unset;
         padding-bottom: 3rem;
+    }
+    .skills-image{
+        height: 45px;
+        width: 45px;
+        margin: auto;
         
+    }
+    .front-end-card{
+        width: 5rem;
+        height: 5rem;
+    }
+    .back-end-card{
+        width: 5rem;
+        height: 5rem;
+    }
+    .tools-card{
+        width: 5rem;
+        height: 5rem;
+    }
+}
+@media (max-width: 575px) and (min-width: 501px) {
+    .front-end-card{
+        width: 6.8rem;
+        height: 6.8rem;
+    }
+    .back-end-card{
+        width: 5rem;
+        height: 5rem;
+    }
+    .tools-card{
+        width: 7rem;
+        height: 7rem;
+    }
+}
+    
+
+/* mobile  */
+@media (max-width: 500px) and (min-width: 300px) {
+    .skills-image{
+        height: 50px;
+        width: 50px;
+        margin: auto;
+        
+    }
+    .front-end-card{
+        width: 5.575rem;
+        height: 5.575rem;
+    }
+    .back-end-card{
+        width: 5rem;
+        height: 5rem;
+    }
+    .tools-card{
+        width: 5rem;
+        height: 5rem;
     }
 }
