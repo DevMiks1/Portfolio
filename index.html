@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
         <!-- scroll reveal -->
-        <script src="https://unpkg.com/scrollreveal"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- <link rel="stylesheet" href="./css/utilities.css"> -->
         <link rel="stylesheet" href="./css/style.css">
     </head>
@@ -38,22 +38,22 @@
         
         <main>
             <!-- hero section  / home section-->
-            <section id="hero-section">
+            <section id="hero-section" >
                 <div class="hero-section container2">
                     <div class="row">
                         <div class="left-hero-section col-md-6">
-                            <div class="profile-name">
+                            <div class="profile-name" data-aos="fade-right" data-aos-duration="700">
                             <h2>Mike Alfred Vargas</h2>
                             <h3>Web Developer</h3>
                             </div>
-                            <div class="social">
+                            <div class="social" data-aos="fade-up" data-aos-duration="700">
                             <a href="#"><i class="fa-brands fa-facebook"></i></a>    
                             <a href="#"><i class="fa-brands fa-instagram"></i></a>
                             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                             <a href="#"><i class="fa-brands fa-github"></i></a>
                             </div>
                         </div>
-                        <div class="right-hero-section col-md-6">
+                        <div class="right-hero-section col-md-6" data-aos="fade-left" data-aos-duration="800">
                             <img src="./image/profile.png" alt="">
                         </div> 
                     </div>  
@@ -65,11 +65,11 @@
             <section id="know-me">
                 <div class="know-me container3">
                     <div class="row">
-                        <div class="know-me-image col-md-6">
+                        <div class="know-me-image col-md-6" data-aos="zoom-in-right" data-aos-duration="700" >
                             <img src="./image/know me.jpg" alt="know me">
                         </div>
                         
-                        <div class=" know-me-description col-md-6 align-self-center">
+                        <div class=" know-me-description col-md-6 align-self-center" data-aos="zoom-in-left" data-aos-duration="700">
                             <h2>Know Me</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolorum iste labore ratione veniam laborum dolor voluptates itaque illo eligendi? Ad unde, magnam corporis quod eveniet animi hic quia nesciunt.</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque accusantium fugiat quo quos repudiandae in esse aperiam, officiis, blanditiis facilis exercitationem dolorum vel cupiditate tempora iste maiores dolor ducimus ab.</p>
@@ -80,19 +80,19 @@
                 </div>
             </section>
             <!-- chess section -->
-            <div class="chess-section container-fluid text-center"> 
+            <div class="chess-section container-fluid text-center" data-aos="flip-right" data-aos-duration="700" data-aos-offset="100"
+            data-aos-easing="ease-in-sine" > 
                 <h2 class="text-light pt-5 pb-3">HOBBIES</h2>
-                <P class="text-light py-2"> These are the things i do when not coding specially playing chess, basketball, mobile games and watching drama</P>
-                <a class="scroll-btn btn btn-lg text-dark fw-bold mb-5" href="#">Read More</a>
+                <P class="text-light py-2"> When not coding, I have a variety of hobbies and interests that allow me to unwind, I love playing chess for the mindgames, basketball for atleast exercise my body and lasly enjoying watching movies and series drama.</P>
             </div>
             <!-- blogs section -->
             <section id="blogs">
                 <div class="blogs container3">
                     <div class="row flex-row-reverse">
-                        <div class="blogs-image col-md-6">
+                        <div class="blogs-image col-md-6" data-aos="fade-left" data-aos-duration="700">
                             <img src="./image/journey.png" alt="blogs">
                         </div>
-                        <div class=" blogs-description col-md-6 align-self-center">
+                        <div class=" blogs-description col-md-6 align-self-center" data-aos="fade-right" data-aos-duration="700">
                             <h2>Journey</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolorum iste labore ratione veniam laborum dolor voluptates itaque illo eligendi? Ad unde, magnam corporis quod eveniet animi hic quia nesciunt.</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque accusantium fugiat quo quos repudiandae in esse aperiam, officiis, blanditiis facilis exercitationem dolorum vel cupiditate tempora iste maiores dolor ducimus ab.</p>
@@ -104,11 +104,11 @@
             <section class="bg-dark">
                 <div class="container4">
                     <div class="title-services">
-                        <h2 class="text-light">Check Our Services</h2>
+                        <h2 class="text-light" data-aos="zoom-in-up" data-aos-duration="700" >Check Our Services</h2>
                     </div>
                     <div class="row row-cols-lg-3">
                         <div class="spacing col">
-                            <div class="services-card card rounded-4" style="width: 26rem; height: 18rem;">
+                            <div class="services-card card rounded-4" style="width: 26rem; height: 18rem;" data-aos="flip-left" data-aos-duration="700">
                                 <img src="./image/car-painting.jpg" class="rounded-4 card-img-top h-100"  alt="...">
                                 <div class="card-body text-center">
                                     <div class="card-title text-light">CAR PAINTING</div>
@@ -119,7 +119,7 @@
                         </div>
                         
                         <div class="col">
-                            <div class="services-card card rounded-4" style="width: 26rem; height: 18rem;">
+                            <div class="services-card card rounded-4" style="width: 26rem; height: 18rem;" data-aos="zoom-in-up" data-aos-duration="700">
                                 <img src="./image/car-tinsmith.png" class="card-img-top h-100"  alt="...">
                                 <div class="card-body text-center">
                                     <div class="card-title text-light">TINSMITH FOR A CAR</div>
@@ -131,7 +131,7 @@
                         </div>
 
                         <div class="col pb-5">
-                            <div class="services-card card rounded-4" style="width: 26rem; height: 18rem;">
+                            <div class="services-card card rounded-4" style="width: 26rem; height: 18rem;" data-aos="flip-right" data-aos-duration="700">
                                 <img src="./image/web-development-services.png" class="card-img-top h-100"  alt="...">
                                 <div class="card-body text-center">
                                     <div class="card-title text-light">WEB DEVELOPMENT</div>
@@ -156,6 +156,10 @@
             </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
         <script src="./js/script.js"></script>
      </body>
 </html>

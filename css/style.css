@@ -250,17 +250,7 @@ transition: .5s ease-in-out;
     z-index: -1;
     transition: .5s ease-in-out;
     }
-/* .chess-section a:hover::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: var(--bg-white);
-    z-index: -1;
-    transition: .5s ease-in-out;
-} */
+
 
 .know-me-description a:hover::before, .blogs-description a:hover::before, .chess-section a:hover::before , .card-body a:hover::before{
     width: 100%; 
