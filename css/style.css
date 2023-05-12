@@ -259,6 +259,10 @@ transition: .5s ease-in-out;
 
 /* ###############################          START OF SERVICES SECTION          ############################################# */
 /* services */
+.services-card{
+    height: 18rem;
+    width: 26rem;
+}
 .title-services h2{
     padding-top: 6rem;
     padding-bottom: 3rem;
@@ -313,7 +317,59 @@ transition: .5s ease-in-out;
 /* ###############################          END OF SERVICES SECTION          ############################################# */
 
 /* index media query */
-@media (max-width: 768px) and (min-width: 500px) {
+@media (max-width: 780px) and (min-width: 500px) {
+    /* blogs */
+    .know-me , .blogs{
+        margin: auto;
+        max-width: 1300px;
+        height: unset;
+        padding-bottom: 2rem;
+    }
+    .know-me {
+        margin-bottom: 2rem;
+    }
+    
+    .know-me img{
+        height: 450px;
+    }
+    .blogs{
+        margin: 3rem 0;
+    }
+    .services-card{
+        height: 21rem;
+        width: 26rem;
+    }
+    .micro-title2{
+        font-size: 1.7rem;
+    }
+    .micro-title3{
+        font-size: 1.3rem;
+    }
+    
+}
+@media (max-width: 767px) and (min-width: 500px){
+    .know-me-description{
+        margin-top: 3rem;
+    }
+    .blogs-description{
+        margin-top: 3rem;
+    }
+    .left-hero-section .social{
+        display: unset;
+    }
+    .hero-section{
+        padding: 0;
+        margin-top: 8rem;
+        text-align: center;
+        position: relative;
+        top: 67px;
+        height: calc(100vh);
+}
+    .left-hero-section{
+        margin-bottom: 2rem;
+}
+}
+@media (max-width: 499px) and (min-width: 200px) {
     
     .know-me , .blogs{
         margin: auto;
@@ -321,5 +377,54 @@ transition: .5s ease-in-out;
         height: unset;
         padding-bottom: 2rem;
         
+    }
+    .know-me-description{
+        margin-top: 3rem;
+    }
+    .blogs-description{
+        margin-top: 3rem;
+    }
+    .left-hero-section .social{
+        display: unset;
+    }
+    .hero-section{
+        padding: 0;
+        margin-top: 8rem;
+        text-align: center;
+        position: relative;
+        top: 67px;
+        height: calc(100vh);
+}
+    .left-hero-section{
+        margin-bottom: 2rem;
+}   
+    .services-card{
+        width: 100%;
+    }
+    .services-card{
+        height: 21rem;
+        width: 26rem;
+    }
+    .card-title{
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+    
+    .card-body .card-subtitle{
+        font-size: 1rem;
+        font-weight: 300;
+        
+    }
+    .card-body .micro2{
+        font-size: .975rem;
+        font-weight: 300;
+    }
+    .card-body .micro3{
+        font-size: .975rem;
+        font-weight: 300;
+    }
+    .card-body{
+        padding: 0;
+        padding: 1rem .5rem;
     }
 }
