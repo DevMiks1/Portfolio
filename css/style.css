@@ -19,7 +19,7 @@
 .container2{
     max-width: 1000px;
     margin: auto;
-    padding: 0 2rem;
+    padding: 2rem 2rem;
 }
 .container3{
     max-width: 1250px;
@@ -266,6 +266,9 @@ transition: .5s ease-in-out;
 .title-services h2{
     padding-top: 6rem;
     padding-bottom: 3rem;
+    font-weight: 900;
+    font-size: 3rem;
+    color: var(--clr-yellowish);
 }
 
 /* effects for card */
@@ -315,9 +318,46 @@ transition: .5s ease-in-out;
 }
 
 /* ###############################          END OF SERVICES SECTION          ############################################# */
-
+@media (max-width: 992px) and (min-width: 781px){
+    .know-me img{
+        height: 450px;
+    }
+    /* .hero-section{
+        padding: 0;
+        margin-top: 8rem;
+        text-align: center;
+        position: relative;
+        top: 67px;
+        height: calc(100vh);
+    } */
+    .left-hero-section .social{
+        display: unset;
+    }
+    .hero-section{
+        padding: 0;
+        margin-top: 10rem;
+        text-align: center;
+        position: relative;
+        top: 67px;
+        height: calc(100vh);
+    }
+    
+}
 /* index media query */
+/* laptop view */
 @media (max-width: 780px) and (min-width: 500px) {
+    /* hero-section */
+    .left-hero-section .social{
+        display: unset;
+    }
+    .hero-section{
+        padding: 0;
+        margin-top: 10rem;
+        text-align: center;
+        position: relative;
+        top: 67px;
+        height: calc(100vh);
+    }
     /* blogs */
     .know-me , .blogs{
         margin: auto;
@@ -347,6 +387,7 @@ transition: .5s ease-in-out;
     }
     
 }
+/* tablet view */
 @media (max-width: 767px) and (min-width: 500px){
     .know-me-description{
         margin-top: 3rem;
@@ -364,26 +405,17 @@ transition: .5s ease-in-out;
         position: relative;
         top: 67px;
         height: calc(100vh);
-}
+    }
     .left-hero-section{
         margin-bottom: 2rem;
 }
+.title-services h2{
+        font-size: 2.5rem;   
 }
+}
+/* mobile view */
 @media (max-width: 499px) and (min-width: 200px) {
-    
-    .know-me , .blogs{
-        margin: auto;
-        max-width: 1300px;
-        height: unset;
-        padding-bottom: 2rem;
-        
-    }
-    .know-me-description{
-        margin-top: 3rem;
-    }
-    .blogs-description{
-        margin-top: 3rem;
-    }
+    /* hero section */
     .left-hero-section .social{
         display: unset;
     }
@@ -398,6 +430,28 @@ transition: .5s ease-in-out;
     .left-hero-section{
         margin-bottom: 2rem;
 }   
+    /* know-me and blogs section */
+    .know-me , .blogs{
+        margin: auto;
+        max-width: 1300px;
+        height: unset;
+        padding-bottom: 2rem;
+        
+    }
+    .blogs-image img{
+       margin-top: 3rem;
+    }
+    .know-me img{
+        height: 400px;
+    }
+    
+    .know-me-description{
+        margin-top: 1rem;
+    }
+    .blogs-description{
+        margin-top: 4rem;
+    }
+   
     .services-card{
         width: 100%;
     }
@@ -427,4 +481,10 @@ transition: .5s ease-in-out;
         padding: 0;
         padding: 1rem .5rem;
     }
+    .title-services h2{
+        font-size: 2rem;   
+}
+.profile-name h2{
+    font-size: 2.3rem;
+}
 }

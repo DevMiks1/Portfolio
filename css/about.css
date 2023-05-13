@@ -7,15 +7,19 @@
     --clr-yellowish: #ffc451; 
 }
 .about-me{
-    position: relative;
-    top: 48px;
-    height: calc(100vh);
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh);  
 }
 .about-me h2{
     padding-bottom: 3rem;
     font-weight: 900;
     font-size: 3rem;
+}
+.about-me p{
+    font-size: 1.3rem;
 }
 #skills-section{
     padding: 3rem 0 5rem 0;
@@ -177,7 +181,7 @@
     border: 4px solid var(--clr-yellowish);
 }
 .card-name{
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: 600;
     color: var(--clr-dark);
 }
@@ -251,132 +255,29 @@
     font-size: 2rem;
     color: var(--clr-yellowish);
 }
-@media (max-width: 1300px) and (min-width: 1136px){
-    .tools-body{
-        padding: .2rem 1rem;
-    }
-}   
-@media (max-width: 1135px) and (min-width: 985px){
-    .tools-body{
-        padding: 5rem .8rem;
-    }
-    .tools-subtitle p{  
-        font-size: 1rem;
-    }
-    .tools-title h2{
-        font-size: 2rem;
-       
-    }
-}
-@media (max-width: 984px) and (min-width: 750px){
-    .back-end-body{
-        padding: 3rem .8rem;
-    }
-    .back-end-body p{  
-        font-size: 1rem;
-    }
-    .back-end-title h2{
-        font-size: 2rem;
-    }
-    .tools-body{
-        padding: 5rem .8rem;
-    }
-    .tools-subtitle p{  
-        font-size: 1rem;
-    }
-    .tools-title h2{
-        font-size: 2rem;
-    }
-}
-@media (max-width: 794px) and (min-width: 610px){
-    .back-end-body{
-        padding: 2rem .8rem;
-    }
-    .back-end-subtitle p{  
-        line-height: 1.1;
-        font-size: 1rem;
-    }
-    .back-end-title h2{
-        font-size: 1rem;
-    }
 
-    .tools-body{
-        padding: 4rem .8rem;
+/* ###############################          START OF MEDIA QUERY          ############################################# */
+@media (max-width: 992px) and (min-width: 768px) {
+    /* about-section */
+    .about-me{
+        margin: 2rem 0;    
     }
-    .tools-subtitle p{  
-        line-height: 1.1;
-        font-size: .9rem;
-    }
-    .tools-title h2{
-        font-size: 1rem;
-    }
-}
-@media (max-width: 609px) and (min-width: 450px){
-    .front-end-body{
-        padding: 2rem .8rem;
-    }
-    .front-end-subtitle p{  
-        line-height: 1.1;
-        font-size: 1rem;
-    }
+    /* skills section */
     .front-end-title h2{
-        font-size: 2rem;
-    }
-    
-    .back-end-body{
-        padding: 2rem .8rem;
-    }
-    .back-end-subtitle p{  
-        line-height: 1.1;
-        font-size: 1rem;
-    }
-    .back-end-title h2{
-        font-size: 1rem;
-    }
-    .tools-body{
-        padding: 6rem .8rem;
-    }
-    .tools-subtitle p{  
-        line-height: 1.2;
-        font-size: .9rem;
-    }
-    .tools-title h2{
-        font-size: 1rem;
-    }
-}
-/* @media (max-width: 576px) and (min-width: 300px){
-    .back-end-body{
-        padding: 2rem .8rem;
-    }
-    .back-end-subtitle p{  
-        line-height: 1.1;
-        font-size: 1rem;
-    }
-    .back-end-title h2{
-        font-size: 1rem;
-    }
-
-    .tools-body{
-        padding: 4rem .8rem;
-    }
-    .tools-subtitle p{  
-        line-height: 1.1;
-        font-size: .8rem;
-    }
-    .tools-title h2{
-        font-size: 1rem;
-    }
-    .back-end{
-        padding: 10rem 0;
-    }
-} */
-/* laptop */
-@media (max-width: 1004px) and (min-width: 851px) {
-    .card-name {
         font-size: 1.5rem;
     }
+    .tools-title h2{
+        font-size: 1.5rem;
+    }
+    .back-end-title h2{
+        font-size: 1.5rem
+    }
+    /* testimonial card */
+    .card-name {
+        font-size: 1.2rem;
+    }
     .card-profession{
-        font-size: .9rem;
+        font-size: .8rem;
     }
     .testimonial-title h2 {
         padding-top: .8rem;
@@ -384,54 +285,136 @@
         font-weight: 600;
         font-size: 2rem;
     }
-}
-@media (max-width: 850px) and (min-width: 768px) {
-    .testimonial-subtitle1{
-        font-size: .9rem ;    
-    }
-    .testimonial-title h2{
-        font-size: 1.5rem;
-    }
-    .emoji{
-        padding-bottom: .9rem;
-    }
-    .emoji i{
-        font-size: 1.5rem;
-    }
-    .testimonial-subtitle2{
-        font-size: .8rem ;    
-    }
-    .testimonial-subtitle3{
-        font-size: .8rem ;    
-    }
-    .card-name {
-        font-size: 1.2rem;
-    }
-    .card-profession{
-        font-size: .9rem;
-    }
     .card-image{
         height: 130px;
         width: 130px;
     }
+    .testimonial-subtitle2 p{
+        padding: 0;
+        line-height: 1.1;
+        font-size: .9rem ;
+        font-weight: 200;
+    }
+    .testimonial-subtitle1 p , .testimonial-subtitle3 p{
+        padding: 0;
+        line-height: 1.2;
+        font-size: .9rem ;
+        font-weight: 200;
+    }
     
 }
-
 /* tablet */
 @media (max-width: 767px) and (min-width: 501px) {
-    .about-me{
-        height: unset;
-        padding-bottom: 3rem;
+    /* about-section */
+    .about-me p{
+        font-size: 1rem;    
     }
+    /* skills-section */
+    .front-end-title h2{
+        font-size: 1.5rem;
+    }
+    .tools-title h2{
+        font-size: 1.5rem;
+    }
+    .back-end-title h2{
+        font-size: 1.5rem
+    }
+
+    /* size of the card */
     .skills-image{
         height: 45px;
-        width: 45px;
+        width: 45px;        
+    }
+    .front-end-card{
+        width: 5rem;
+        height: 5rem;
+    }
+    .back-end-card{
+        width: 5rem;
+        height: 5rem;
+    }
+    .tools-card{
+        width: 5rem;
+        height: 5rem;
+    }
+    /* spacing and font for the body */
+    .front-end-body{
+        padding: 2rem .8rem;
+    }
+    .front-end-subtitle p{  
+        line-height: 1.2;
+        font-size: 1.1rem;
+    }
+    .back-end-body{
+        padding: 2rem .8rem;
+    }
+    .back-end-subtitle p{  
+        line-height: 1.2;
+        font-size: 1rem;
+    }
+    .tools-body{
+        padding: 4rem .8rem;
+    }
+    .tools-subtitle p{  
+        line-height: 1.2;
+        font-size: 1rem;
+    }
+    
+    
+}
+/* mobile view */
+@media (max-width: 500px) and (min-width: 458px) {
+    /* about section */
+    .about-me{
+        position: relative;
+        top: 30px;
+        
+    }
+    .about-me p{
+        font-size: 1rem;
+    }
+    /* spacing and font for the body */
+    .front-end-body{
+        padding: 2rem .8rem;
+    }
+    .front-end-title h2{
+        font-size: 2rem;
+    }
+    .front-end-subtitle p{  
+        line-height: 1.2;
+        font-size: 1rem;
+    }
+    .back-end-body{
+        padding: 2rem .8rem;
+    }
+    .back-end-title h2{
+        font-size: 1.3rem;
+    }
+    .back-end-subtitle p{  
+        line-height: 1.2;
+        font-size: 1rem;
+    }
+    .tools-body{
+        padding: 4rem .8rem;
+    }
+    .tools-title h2{
+        font-size: 1rem;
+    }
+    .tools-subtitle p{  
+        line-height: 1.2;
+        font-size: .8rem;
+    }
+
+    /* size of the card */
+    .skills-image{
+        height: 50px;
+        width: 50px;
         margin: auto;
         
     }
     .front-end-card{
-        width: 5rem;
-        height: 5rem;
+        width: 5.575rem;
+        height: 5.575rem;
     }
     .back-end-card{
         width: 5rem;
@@ -442,24 +425,54 @@
         height: 5rem;
     }
 }
-@media (max-width: 575px) and (min-width: 501px) {
-    .front-end-card{
-        width: 6.8rem;
-        height: 6.8rem;
-    }
-    .back-end-card{
-        width: 5rem;
-        height: 5rem;
-    }
-    .tools-card{
-        width: 7rem;
-        height: 7rem;
-    }
-}
-    
 
-/* mobile  */
-@media (max-width: 500px) and (min-width: 300px) {
+@media (max-width: 459px) and (min-width: 300px) {
+    .about-me{
+        position: relative;
+        top: 30px;
+        
+    }
+    .about-me p{
+        font-size: 1rem;
+    }
+    .back-end{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+     /* spacing and font for the body */
+    .front-end-body{
+        padding: 2rem .8rem;
+    }
+    .front-end-title h2{
+        font-size: 2rem;
+    }
+    .front-end-subtitle p{  
+        line-height: 1.2;
+        font-size: 1rem;
+    }
+    .back-end-body{
+        padding: 2rem .8rem;
+    }
+    .back-end-title h2{
+        font-size: 1.9rem;
+    }
+    .back-end-subtitle p{  
+        line-height: 1.2;
+        font-size: 1rem;
+    }
+    .tools-body{
+        padding: 6rem .3rem;
+    }
+    .tools-title h2{
+        font-size: 1rem;
+    }
+    .tools-subtitle p{  
+        line-height: 1.2;
+        font-size: .8rem;
+    }
+
+    /* size of the card */
     .skills-image{
         height: 50px;
         width: 50px;
