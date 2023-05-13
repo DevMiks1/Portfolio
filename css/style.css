@@ -426,10 +426,13 @@ transition: .5s ease-in-out;
         position: relative;
         top: 67px;
         height: calc(100vh);
-}
+    }
     .left-hero-section{
         margin-bottom: 2rem;
-}   
+    }   
+    .profile-name h2{
+        font-size: 2.3rem;
+    }
     /* know-me and blogs section */
     .know-me , .blogs{
         margin: auto;
@@ -484,11 +487,49 @@ transition: .5s ease-in-out;
     .title-services h2{
         font-size: 2rem;   
 }
-.profile-name h2{
-    font-size: 2.3rem;
-}
+
 }
 @media (max-width: 374px) and (min-width: 200px) {
+     /* hero section */
+     .left-hero-section .social{
+        display: unset;
+    }
+    .hero-section{
+        padding: 0;
+        margin-top: 8rem;
+        text-align: center;
+        position: relative;
+        top: 67px;
+        height: calc(100vh);
+    }
+    .left-hero-section{
+        margin-bottom: 2rem;
+    }   
+    .profile-name h2{
+        font-size: 2.3rem;
+    }
+    /* know-me and blogs section */
+    .know-me , .blogs{
+        margin: auto;
+        max-width: 1300px;
+        height: unset;
+        padding-bottom: 2rem;
+        
+    }
+    .blogs-image img{
+       margin-top: 3rem;
+    }
+    .know-me img{
+        height: 400px;
+    }
+    
+    .know-me-description{
+        margin-top: 1rem;
+    }
+    .blogs-description{
+        margin-top: 4rem;
+    }
+    /* services-section */
     .card-body{
         padding: 0;
         padding: 1rem .3rem;
