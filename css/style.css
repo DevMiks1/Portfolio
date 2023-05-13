@@ -414,7 +414,7 @@ transition: .5s ease-in-out;
 }
 }
 /* mobile view */
-@media (max-width: 499px) and (min-width: 200px) {
+@media (max-width: 499px) and (min-width: 375px) {
     /* hero section */
     .left-hero-section .social{
         display: unset;
@@ -460,22 +460,22 @@ transition: .5s ease-in-out;
         width: 26rem;
     }
     .card-title{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         font-weight: 600;
     }
     
-    .card-body .card-subtitle{
+    .card-body .micro1{
         font-size: 1rem;
-        font-weight: 300;
+       
         
     }
     .card-body .micro2{
         font-size: .975rem;
-        font-weight: 300;
+     
     }
     .card-body .micro3{
         font-size: .975rem;
-        font-weight: 300;
+      
     }
     .card-body{
         padding: 0;
@@ -487,4 +487,26 @@ transition: .5s ease-in-out;
 .profile-name h2{
     font-size: 2.3rem;
 }
+}
+@media (max-width: 374px) and (min-width: 200px) {
+    .card-body{
+        padding: 0;
+        padding: 1rem .3rem;
+    }
+    .card-title{
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+    .card-body .micro1{
+        font-size: .8rem;
+        
+    }
+    .card-body .micro2{
+        font-size: .8rem;
+        
+    }
+    .card-body .micro3{
+        font-size: .8rem;
+        
+    }
 }
